@@ -1,0 +1,35 @@
+> nodemon server.js
+
+> mongod
+
+Calls:
+------
+
+http://localhost:3000/user/signup
+
+{
+	"email": "test@test.com",
+	"password": "test"
+}
+
+
+http://localhost:3000/user/login
+
+{
+	"email": "test@test.com",
+	"password": "test"
+}
+
+{
+    "message": "Auth successful",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJ1c2VySWQiOiI1YmFjNWNkOWY0MDIwMzAyM2NkZWMxNGUiLCJpYXQiOjE1MzgwMjM3MzIsImV4cCI6MTUzODAyNzMzMn0.-yn9ZSY1pOGik_2KPHYotaJP1hg25w1D5M2yKJhqTp0"
+}
+
+
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJ1c2VySWQiOiI1YmFjNWNkOWY0MDIwMzAyM2NkZWMxNGUiLCJpYXQiOjE1MzgwMjM3MzIsImV4cCI6MTUzODAyNzMzMn0.-yn9ZSY1pOGik_2KPHYotaJP1hg25w1D5M2yKJhqTp0
+
+
+In Postman,
+For creating Product, we must set Body as form-data and should not set Content-Type: application/json
+
+For Other api's, set Body as raw and Content-Type: application/json
