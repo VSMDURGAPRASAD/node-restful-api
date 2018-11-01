@@ -1,4 +1,5 @@
 > nodemon server.js
+> nodemon --inspect server.js //For debugging
 
 > mongod
 
